@@ -1,6 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Developer Note
+
+This example project was created as part of a front-end exercise for an interview assignment from Pafin. The goal of this project is to showcase my skills in building React applications using TypeScript.
+
+### Key Highlights:
+
+- **React with TypeScript:** This project demonstrates the ability to develop a React application using TypeScript, showcasing a strong understanding of statically-typed JavaScript.
+
+- **Coding Style and Structure:** The project adheres to clean coding practices, maintaining a clear project structure, and following best practices for React development with TypeScript.
+
+- **Problem-Solving Approach:** The implementation reflects a thoughtful and problem-solving approach, emphasizing efficiency and maintainability in a typed environment.
+
+I hope this example effectively communicates my skills and enthusiasm for front-end development. Feel free to explore the project, and reach out if you have any questions or feedback.
+
+Thank you for considering my application!
+
+Kevin Fondevila
+(ケビン　フォンでビラ)
+
+
+
+
+
+
+## How to run the app
+
+### 1- Clone or download
+### 2- Open CMD inside the project
+### 3- Run "npm install"
+### 4- Run "npm start"
+### 5- Go to http://localhost:3000
+
+
+
+## Desktop
+![alt text](https://i.imgur.com/9qQdfEE.png) 
+## Mobile
+<img src='https://i.imgur.com/AgSVuAg.jpeg' width='250'>
+<img src='https://i.imgur.com/Ju2FV59.jpeg' width='250'>
+
+
 
 ## Available Scripts
 
