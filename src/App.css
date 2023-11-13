@@ -1,0 +1,262 @@
+body {
+  background-color: #eef4fa;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "assistant_title"
+    "aside"
+    "mainsection";
+  padding: 60px 0px 0px 0px;
+  gap: 16px;
+}
+.assistant_title {
+  grid-area: assistant_title;
+  height: 42px;
+  top: 60px;
+  left: 112px;
+  font-family: Noto Sans JP;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e3f51;
+  margin-bottom: 50px;
+}
+
+.mainsection {
+  grid-area: mainsection;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.transaction {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 32px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0px #0000001a;
+  box-shadow: 0px 1px 2px 0px #0000000f;
+}
+.transaction_header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.transaction_title {
+  display: flex;
+  justify-content: space-between;
+}
+.transaction_title_main {
+  display: flex;
+  gap: 8px;
+}
+.transaction_counter {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+}
+.transaction_counter_text {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #8c959d;
+}
+.transaction_title_text {
+  font-family: Noto Sans JP;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e3f51;
+}
+.transaction_counter_icon {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  justify-self: right;
+}
+
+.transaction_description {
+  padding: 16px, 8px, 0px, 0px;
+  gap: 8px;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #596269;
+}
+
+.transaction_body {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.transaction_body_card {
+  display: grid;
+  gap: 8px;
+  grid-template-areas:
+    "card_status card_title"
+    "... card_infotop"
+    "... card_description"
+    "... card_infobottom"
+    "... card_btn";
+  border: 1px solid #dee1e3;
+  border-radius: 8px;
+  padding: 16px;
+
+}
+.transtaction_body_card_status {
+  grid-area: card_status;
+  justify-self: flex-end;
+}
+.transtaction_body_card_title {
+  grid-area: card_title;
+}
+.transtaction_body_card_infotop {
+  grid-area: card_infotop;
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1e54b7;
+  background-color: #f1f5fe;
+  width: fit-content;
+  padding: 0px, 8px, 0px, 8px;
+  border-radius: 4px;
+}
+.transtaction_body_card_infobottom {
+  grid-area: card_infobottom;
+}
+
+.transtaction_body_card_description {
+  grid-area: card_description;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #596269;
+}
+.transtaction_body_card_btn {
+  grid-area: card_btn;
+  background-color: #4299e1;
+  width: 104px;
+  height: 10px;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 8px;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-self: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+.aside {
+  grid-area: aside;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.aside_title {
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #5f799c;
+}
+.aside_body {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.aside_quickaccess {
+  max-width: 157px;
+  height: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px;
+  gap: 8px;
+  background-color: #f6f9fc;
+  border: 1px solid #d9ebf9;
+}
+.aside_quickaccess_title {
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e3f51;
+}
+.aside_quickaccess_description {
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #596269;
+  /*width: 157px;*/
+  height: 75px;
+}
+
+@media (min-width: 768px) {
+  /* Cambia el diseño en dispositivos con una pantalla de al menos 768px de ancho */
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "assistant_title assistant_title"
+      "mainsection aside";
+    padding: 60px 112px 0px 112px;
+  }
+
+  .transaction_body_card {
+    display: grid;
+    grid-template-areas:
+      "card_status card_title card_title"
+      "... card_infotop ..."
+      "... card_description ..."
+      "... card_infobottom ...";
+  }
+  .transtaction_body_card_btn {
+    grid-column: 3;
+    grid-row: 2/4;
+    justify-self: center;
+  }
+
+  .aside_body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
