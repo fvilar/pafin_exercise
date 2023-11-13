@@ -7,12 +7,14 @@ import {
 } from "@phosphor-icons/react";
 import ActionButton from "./ActionButton";
 import Step from "./Step";
-
+import ProgressBar from "./ProgressBar";
 type props = {
   title: string;
   description: string;
   icon: ReactNode;
   steps: ReactNode[];
+  progress: number;
+  counter: string;
 };
 
 export default function StepContainer(props: props) {
@@ -25,8 +27,12 @@ export default function StepContainer(props: props) {
             <div className="transaction_title_text">{props.title}</div>
           </div>
           <div className="transaction_counter">
-            <div className="transaction_counter_progressbar"></div>
-            <div className="transaction_counter_text">1/2ステップ</div>
+            <div className="transaction_counter_progressbar">
+              <ProgressBar progressNumber={props.progress}></ProgressBar>
+            </div>
+            <div className="transaction_counter_text">
+              {props.counter}ステップ
+            </div>
             <CaretUp
               className="transaction_counter_icon"
               size={16}

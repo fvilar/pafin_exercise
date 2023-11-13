@@ -81,12 +81,16 @@ export default function Assistant() {
             ></UserCircleGear>
           }
           steps={Steps1}
+          progress={50}
+          counter="1/2"
         />
         <StepContainer
           title="足りていない情報を追加しましょう"
           description="情報が不足していると計算が完了しません。必ず追加してください。"
           icon={<Gear color="#4299E1" size={26} weight="duotone"></Gear>}
           steps={Steps2}
+          progress={0}
+          counter="0/2"
         />
         <StepContainer
           title="計算結果を確認しましょう"
@@ -95,6 +99,8 @@ export default function Assistant() {
             <ListChecks color="#4299E1" size={26} weight="duotone"></ListChecks>
           }
           steps={Steps3}
+          progress={100}
+          counter="3/3"
         />
       </div>
       <QuickAccessAside />
