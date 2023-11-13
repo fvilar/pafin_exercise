@@ -21,17 +21,17 @@ export default function StepContainer(props: props) {
       <div className="transaction_header">
         <div className="transaction_title">
           <div className="transaction_title_main">
-            <UserCircleGear
-              color="#4299E1"
-              size={26}
-              weight="fill"
-            ></UserCircleGear>
+            {props.icon}
             <div className="transaction_title_text">{props.title}</div>
           </div>
           <div className="transaction_counter">
             <div className="transaction_counter_progressbar"></div>
             <div className="transaction_counter_text">1/2ステップ</div>
-            {props.icon}
+            <CaretUp
+              className="transaction_counter_icon"
+              size={16}
+              color="#8C959D"
+            ></CaretUp>
           </div>
         </div>
 
