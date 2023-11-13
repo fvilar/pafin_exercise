@@ -5,26 +5,39 @@ import {
   CaretUp,
   CheckCircle,
   ArrowRight,
+  CircleDashed,
 } from "@phosphor-icons/react";
 
-export default function Step() {
+type props = {
+  status: boolean;
+  inactive: boolean;
+  title: string;
+  infotop?: string;
+  description: string;
+  infobottom?: string;
+};
+export default function Step(props: props) {
   return (
-    <div className="transaction_body_card">
+    <div
+      className="transaction_body_card"
+      style={props.inactive ? { opacity: 0.5 } : {}}
+    >
       <div className="transtaction_body_card_status">
-        <CheckCircle size={24} color="#38C97C" weight="fill"></CheckCircle>
+        {props.status ? (
+          <CheckCircle size={24} color="#38C97C" weight="fill"></CheckCircle>
+        ) : (
+          <CircleDashed size={24} color="#A7AEB4"></CircleDashed>
+        )}
       </div>
-      <div className="transtaction_body_card_title">
-        取引所 / ブロックチェーンを選択しましょう
-      </div>
-      <div className="transtaction_body_card_infotop">
-        13 取引所/ブロックチェーン選択済み
-      </div>
+      <div className="transtaction_body_card_title">{props.title}</div>
+      <div className="transtaction_body_card_infotop">{props?.infotop}</div>
       <div className="transtaction_body_card_description">
-        取引をしたことのある取引所 /
-        ブロックチェーンをすべて選択してください。対応していない取引所や取引所外での取引経験がある場合は「カスタム」を選択してください。
+        {props.description}
       </div>
       <ActionButton></ActionButton>
-      <div className="transtaction_body_card_infobottom"></div>
+      <div className="transtaction_body_card_infobottom">
+        {props?.infobottom}
+      </div>
     </div>
   );
 }
