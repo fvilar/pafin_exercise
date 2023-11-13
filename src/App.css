@@ -32,7 +32,6 @@ body {
   gap: 16px;
   display: flex;
   flex-direction: column;
- 
 }
 .transaction {
   display: flex;
@@ -119,7 +118,6 @@ body {
   border: 1px solid #dee1e3;
   border-radius: 8px;
   padding: 16px;
-
 }
 .transtaction_body_card_status {
   grid-area: card_status;
@@ -127,6 +125,13 @@ body {
 }
 .transtaction_body_card_title {
   grid-area: card_title;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e3f51;
 }
 .transtaction_body_card_infotop {
   grid-area: card_infotop;
