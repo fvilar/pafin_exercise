@@ -1,8 +1,10 @@
+/* Body styling */
 body {
   background-color: #eef4fa;
   height: 100vh;
 }
 
+/* Container styling using CSS Grid */
 .container {
   display: grid;
   grid-template-areas:
@@ -12,11 +14,14 @@ body {
   padding: 60px 0px 0px 0px;
   gap: 16px;
 }
+
+/* Title styling for the assistant section */
 .assistant_title {
   grid-area: assistant_title;
   height: 42px;
   top: 60px;
   left: 112px;
+  /* Typography styles */
   font-family: Noto Sans JP;
   font-size: 32px;
   font-weight: 600;
@@ -27,12 +32,15 @@ body {
   margin-bottom: 50px;
 }
 
+/* Main section styling */
 .mainsection {
   grid-area: mainsection;
   gap: 16px;
   display: flex;
   flex-direction: column;
 }
+
+/* Transaction styling */
 .transaction {
   display: flex;
   flex-direction: column;
@@ -43,24 +51,34 @@ body {
   box-shadow: 0px 1px 2px 0px #0000001a;
   box-shadow: 0px 1px 2px 0px #0000000f;
 }
+
+/* Transaction header styling */
 .transaction_header {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
+/* Transaction title styling */
 .transaction_title {
   display: flex;
   justify-content: space-between;
 }
+
+/* Transaction title main styling */
 .transaction_title_main {
   display: flex;
   gap: 8px;
 }
+
+/* Transaction counter styling */
 .transaction_counter {
   display: flex;
   align-self: flex-end;
   gap: 10px;
 }
+
+/* Transaction counter text styling */
 .transaction_counter_text {
   font-family: Noto Sans JP;
   font-size: 14px;
@@ -70,6 +88,8 @@ body {
   text-align: left;
   color: #8c959d;
 }
+
+/* Transaction title text styling */
 .transaction_title_text {
   font-family: Noto Sans JP;
   font-size: 20px;
@@ -79,6 +99,8 @@ body {
   text-align: left;
   color: #2e3f51;
 }
+
+/* Transaction counter icon styling */
 .transaction_counter_icon {
   font-family: Noto Sans JP;
   font-size: 14px;
@@ -89,6 +111,7 @@ body {
   justify-self: right;
 }
 
+/* Transaction description styling */
 .transaction_description {
   padding: 16px, 8px, 0px, 0px;
   gap: 8px;
@@ -101,11 +124,14 @@ body {
   color: #596269;
 }
 
+/* Transaction body styling */
 .transaction_body {
   gap: 16px;
   display: flex;
   flex-direction: column;
 }
+
+/* Transaction body card styling */
 .transaction_body_card {
   display: grid;
   gap: 8px;
@@ -119,10 +145,14 @@ body {
   border-radius: 8px;
   padding: 16px;
 }
+
+/* Transaction body card status styling */
 .transtaction_body_card_status {
   grid-area: card_status;
   justify-self: flex-end;
 }
+
+/* Transaction body card title styling */
 .transtaction_body_card_title {
   grid-area: card_title;
   font-family: Noto Sans JP;
@@ -133,6 +163,8 @@ body {
   text-align: left;
   color: #2e3f51;
 }
+
+/* Transaction body card infotop styling */
 .transtaction_body_card_infotop {
   grid-area: card_infotop;
   font-family: Noto Sans JP;
@@ -147,10 +179,13 @@ body {
   padding: 0px, 8px, 0px, 8px;
   border-radius: 4px;
 }
+
+/* Transaction body card infobottom styling */
 .transtaction_body_card_infobottom {
   grid-area: card_infobottom;
 }
 
+/* Transaction body card description styling */
 .transtaction_body_card_description {
   grid-area: card_description;
   font-family: Noto Sans JP;
@@ -161,6 +196,8 @@ body {
   text-align: left;
   color: #596269;
 }
+
+/* Transaction body card button styling */
 .transtaction_body_card_btn {
   grid-area: card_btn;
   background-color: #4299e1;
@@ -184,11 +221,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Aside section styling */
 .aside {
   grid-area: aside;
   justify-content: flex-start;
   gap: 16px;
 }
+
+/* Aside title styling */
 .aside_title {
   font-family: Noto Sans JP;
   font-size: 12px;
@@ -198,12 +239,15 @@ body {
   text-align: left;
   color: #5f799c;
 }
+
+/* Aside body styling */
 .aside_body {
   display: flex;
   justify-content: flex-start;
   gap: 16px;
 }
 
+/* Aside quick access styling */
 .aside_quickaccess {
   max-width: 157px;
   height: fit-content;
@@ -214,6 +258,8 @@ body {
   background-color: #f6f9fc;
   border: 1px solid #d9ebf9;
 }
+
+/* Aside quick access title styling */
 .aside_quickaccess_title {
   font-family: Noto Sans JP;
   font-size: 14px;
@@ -223,6 +269,8 @@ body {
   text-align: left;
   color: #2e3f51;
 }
+
+/* Aside quick access description styling */
 .aside_quickaccess_description {
   font-family: Noto Sans JP;
   font-size: 12px;
@@ -231,12 +279,11 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #596269;
-  /*width: 157px;*/
   height: 75px;
 }
 
+/* Media query for larger screens */
 @media (min-width: 768px) {
-  /* Cambia el diseño en dispositivos con una pantalla de al menos 768px de ancho */
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -245,6 +292,7 @@ body {
     padding: 60px 112px 0px 112px;
   }
 
+  /* Adjustments for larger screens */
   .transaction_body_card {
     display: grid;
     grid-template-areas:
@@ -266,6 +314,7 @@ body {
   }
 }
 
+/* Styling for the progress bar */
 .progress_bar {
   width: 60px;
   height: 6px;
@@ -274,43 +323,27 @@ body {
   border-radius: 8px;
 }
 
+/* Styling for the progress within the progress bar */
 .progress {
   height: 100%;
-  width: 10%; /* Ajusta este valor para cambiar el progress */
+  width: 10%;
   background-color: #38c97c;
   border-radius: 8px;
-  transition: width 0.5s ease; /* Agrega una transición suave para la animación */
-}
-
-.container {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.assistant_title {
-  animation: slideIn 1s ease-in-out;
-}
-
-.transaction {
-  animation: fadeIn 1s ease-in-out;
-}
-
-.transaction_body_card {
-  animation: slideIn 1s ease-in-out;
-}
-
-.progress_bar {
   transition: width 0.5s ease;
 }
 
-.progress {
-  transition: width 0.5s ease;
-}
-
+/* Animation for fading in and sliding in elements */
+.container,
+.assistant_title,
+.transaction,
+.transaction_body_card,
+.progress_bar,
+.progress,
 .aside_quickaccess {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Define las animaciones */
+/* Keyframes for fadeIn animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -320,6 +353,7 @@ body {
   }
 }
 
+/* Keyframes for slideIn animation */
 @keyframes slideIn {
   from {
     transform: translateY(-20px);
@@ -331,15 +365,14 @@ body {
   }
 }
 
-/* Efecto al pasar el ratón por encima de las tarjetas de transacciones */
+/* Hover effect for transaction body card */
 .transaction_body_card:hover {
   transform: scale(1.03);
   cursor: pointer;
 }
 
-/* Efecto al pasar el ratón por encima del acceso rápido del aside */
+/* Hover effect for aside quick access */
 .aside_quickaccess:hover {
   transform: scale(1.03);
   cursor: pointer;
-
 }
