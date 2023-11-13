@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function ProgressBar() {
+type props = {
+  progressNumber: number;
+};
+export default function ProgressBar(props: props) {
   return (
-    <div>ProgressBar</div>
-  )
+    <div className="progress_bar">
+      <div className="progress" style={{ width: props.progressNumber+"%" }}></div>
+    </div>
+  );
 }
