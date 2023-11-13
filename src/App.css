@@ -277,7 +277,69 @@ body {
 .progress {
   height: 100%;
   width: 10%; /* Ajusta este valor para cambiar el progress */
-  background-color: #38C97C;
+  background-color: #38c97c;
   border-radius: 8px;
   transition: width 0.5s ease; /* Agrega una transición suave para la animación */
+}
+
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.assistant_title {
+  animation: slideIn 1s ease-in-out;
+}
+
+.transaction {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.transaction_body_card {
+  animation: slideIn 1s ease-in-out;
+}
+
+.progress_bar {
+  transition: width 0.5s ease;
+}
+
+.progress {
+  transition: width 0.5s ease;
+}
+
+.aside_quickaccess {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Define las animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Efecto al pasar el ratón por encima de las tarjetas de transacciones */
+.transaction_body_card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* Efecto al pasar el ratón por encima del acceso rápido del aside */
+.aside_quickaccess:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+
 }
